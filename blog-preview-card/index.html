@@ -1,34 +1,79 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              primary: ["Figtree", "sans-serif"],
+            },
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Blog preview card</title>
+    <title>Frontend Mentor | Blog preview card</title>
+  </head>
+  <body class="flex min-h-screen w-full flex-col bg-yellow-500">
+    <main
+      class="font-primary m-auto max-w-[327px] flex-col rounded-2xl border-2 border-black bg-white shadow-[rgba(0,0,0,1)_5px_5px_0px_2px]"
+    >
+      <img
+        class="m-4 rounded-xl"
+        width="288"
+        height="200"
+        src="./assets/images/illustration-article.svg"
+        alt="illustration-article"
+      />
+      <div class="my-3">
+        <span class="m-4 bg-yellow-500 px-2 py-1 text-xs font-extrabold"
+          >Learning</span
+        >
+      </div>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+      <div class="mx-4 my-3 text-xs font-medium">Published 21 Dec 2023</div>
 
-  Learning
+      <h1 class="mx-4 my-3 text-lg font-extrabold tracking-tight">
+        HTML & CSS foundations
+      </h1>
 
-  Published 21 Dec 2023
-
-  HTML & CSS foundations
-
-  These languages are the backbone of every website, defining structure, content, and presentation.
-
-  Greg Hooper
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+      <p class="mx-4 my-3 text-sm font-medium text-gray-500">
+        These languages are the backbone of every website, defining structure,
+        content, and presentation.
+      </p>
+      <div class="flex flex-row items-center">
+        <img
+          class="m-4"
+          width="32"
+          height="32"
+          src="./assets/images/image-avatar.webp"
+          alt="illustration-article"
+        />
+        <div class="my-3 text-xs font-extrabold tracking-tight">
+          Greg Hooper
+        </div>
+      </div>
+    </main>
+    <!--
+      <footer class="bg-gray-100">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">a newbie</a>.
+      </footer> -->
+  </body>
 </html>
