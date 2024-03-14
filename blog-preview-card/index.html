@@ -28,30 +28,42 @@
 
     <title>Frontend Mentor | Blog preview card</title>
   </head>
-  <body class="flex min-h-screen w-full flex-col bg-yellow-500">
+  <body class="flex min-h-screen w-full flex-col bg-yellow-300">
     <main
-      class="font-primary m-auto max-w-[327px] flex-col rounded-2xl border-2 border-black bg-white shadow-[rgba(0,0,0,1)_5px_5px_0px_2px]"
+      class="font-primary m-auto max-w-[327px] flex-col rounded-2xl border-2 border-black bg-white shadow-[rgba(0,0,0,1)_5px_5px_0px_2px] md:max-w-96"
     >
-      <img
-        class="m-4 rounded-xl"
-        width="288"
-        height="200"
-        src="./assets/images/illustration-article.svg"
-        alt="illustration-article"
-      />
-      <div class="my-3">
-        <span class="m-4 bg-yellow-500 px-2 py-1 text-xs font-extrabold"
+      <div class="m-4">
+        <img
+          class="h-auto w-full rounded-xl"
+          src="./assets/images/illustration-article.svg"
+          alt="illustration-article"
+        />
+      </div>
+      <!-- <div class="my-3">
+        <span
+          class="m-4 bg-yellow-300 px-2 py-1 text-xs font-extrabold md:text-sm"
           >Learning</span
         >
+      </div> -->
+      <div
+        class="m-4 w-fit rounded bg-yellow-300 px-2 py-1 text-xs font-extrabold md:text-sm"
+      >
+        Learning
       </div>
 
-      <div class="mx-4 my-3 text-xs font-medium">Published 21 Dec 2023</div>
+      <div class="mx-4 my-3 text-xs font-medium md:text-sm">
+        Published 21 Dec 2023
+      </div>
 
-      <h1 class="mx-4 my-3 text-lg font-extrabold tracking-tight">
-        HTML & CSS foundations
+      <h1
+        class="mx-4 my-3 text-lg font-extrabold tracking-tight hover:text-yellow-300 md:text-xl"
+      >
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >HTML & CSS foundations</a
+        >
       </h1>
 
-      <p class="mx-4 my-3 text-sm font-medium text-gray-500">
+      <p class="mx-4 my-3 text-sm font-medium text-gray-500 md:text-base">
         These languages are the backbone of every website, defining structure,
         content, and presentation.
       </p>
@@ -63,7 +75,7 @@
           src="./assets/images/image-avatar.webp"
           alt="illustration-article"
         />
-        <div class="my-3 text-xs font-extrabold tracking-tight">
+        <div class="my-3 text-xs font-extrabold tracking-tight md:text-sm">
           Greg Hooper
         </div>
       </div>
