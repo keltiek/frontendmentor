@@ -11,6 +11,19 @@
     /> -->
     <!-- displays site properly based on user's device -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+      @layer base {
+      @font-face {
+        font-family: "YoungSerif";
+        font-weight: 400;
+        src: url("./assets/fonts/young-serif/YoungSerif-Regular.ttf");
+         }
+         @font-face {
+          font-family: "Outfit";
+          src: url("./assets/fonts/outfit/Outfit-VariableFont_wght.ttf");
+           }
+        }
+    </style>
     <script>
       tailwind.config = {
         theme: {
@@ -50,49 +63,46 @@
     <title>Frontend Mentor | Recipe page</title>
   </head>
   <body
-    class="bg-eggshell text-wengebrown font-outfit flex min-h-svh w-full flex-col font-semibold tracking-normal"
+    class="bg-eggshell text-wengebrown font-outfit flex min-h-svh w-full flex-col"
   >
-    <main class="m-auto flex max-w-[375px] flex-col bg-white">
+    <main class="m-auto flex max-w-[376px] flex-col bg-white">
       <img
         class="h-auto"
         src="./assets/images/image-omelette.jpeg"
         alt="image-omelette"
       />
       <div class="mx-8">
+        <!-- [2.6rem] leading-none tracking-tight -->
         <h1
-          class="text-darkcharcoal font-youngserif my-6 text-[2.6rem] font-bold leading-none tracking-tight"
-        >
-          Simple Omelette Recipe
+          class="text-darkcharcoal font-youngserif mt-8 mb-6 text-4xl"
+        >Simple Omelette Recipe
         </h1>
         <p class="mb-8">
-          An easy and quick dish, perfect for any<br />
-          meal. This classic omelette combines beaten eggs cooked to perfection,
+          An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked to perfection,
           optionally filled with your choice of cheese, vegetables, or meats.
         </p>
 
         <div class="bg-rosewhite mb-4 p-4">
-          <h2 class="text-darkraspberry mb-2 text-2xl font-extrabold">
+          <h2 class="text-darkraspberry mx-2 mb-3 text-xl font-semibold">
             Preparation time
           </h2>
-          <ul class="marker:text-darkraspberry list-square ml-6 space-y-2">
+          <ul class="marker:text-darkraspberry list-square mx-12 space-y-2">
             <li><b>Total</b>: Approximately 10 minutes</li>
             <li><b>Preparation</b>: 5 minutes</li>
             <li><b>Cooking</b>: 5 minutes</li>
           </ul>
         </div>
 
-        <h2 class="text-nutmeg text-2xl">Ingredients</h2>
-        <ul class="list-square ml-6 space-y-2">
+        <h2 class="mt-8 mb-5 text-nutmeg text-[1.75rem] font-youngserif">Ingredients</h2>
+        <ul class="list-square mx-10 space-y-2 mb-8">
           <li>2-3 large eggs</li>
           <li>Salt, to taste</li>
           <li>Pepper, to taste</li>
           <li>1 tablespoon of butter or oil</li>
-          <li>
-            Optional fillings: cheese, diced vegetables, cooked meats, herbs
-          </li>
+          <li>Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
         </ul>
         <hr />
-        <h2 class="text-nutmeg text-2xl">Instructions</h2>
+        <h2 class="mt-8 text-nutmeg text-[1.75rem] font-youngserif">Instructions</h2>
         <ol class="ml-6 list-decimal space-y-2">
           <li>
             Beat the eggs: In a bowl, beat the eggs with a pinch of salt and
@@ -120,7 +130,7 @@
           <li>Enjoy: Serve hot, with additional salt and pepper if needed.</li>
         </ol>
         <hr />
-        <h2 class="text-nutmeg text-2xl">Nutrition</h2>
+        <h2 class="mt-8 text-nutmeg text-[1.75rem] font-youngserif">Nutrition</h2>
         <p>
           The table below shows nutritional values per serving without the
           additional fillings.
