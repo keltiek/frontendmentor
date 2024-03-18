@@ -13,16 +13,16 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <style type="text/tailwindcss">
       @layer base {
-      @font-face {
-        font-family: "YoungSerif";
-        font-weight: 400;
-        src: url("./assets/fonts/young-serif/YoungSerif-Regular.ttf");
-         }
-         @font-face {
+        @font-face {
+          font-family: "YoungSerif";
+          font-weight: 400;
+          src: url("./assets/fonts/young-serif/YoungSerif-Regular.ttf");
+        }
+        @font-face {
           font-family: "Outfit";
           src: url("./assets/fonts/outfit/Outfit-VariableFont_wght.ttf");
-           }
         }
+      }
     </style>
     <script>
       tailwind.config = {
@@ -73,13 +73,13 @@
       />
       <div class="mx-8">
         <!-- [2.6rem] leading-none tracking-tight -->
-        <h1
-          class="text-darkcharcoal font-youngserif mt-8 mb-6 text-4xl"
-        >Simple Omelette Recipe
+        <h1 class="text-darkcharcoal font-youngserif mb-6 mt-8 text-4xl">
+          Simple Omelette Recipe
         </h1>
         <p class="mb-8">
-          An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked to perfection,
-          optionally filled with your choice of cheese, vegetables, or meats.
+          An easy and quick dish, perfect for any meal. This classic omelette
+          combines beaten eggs cooked to perfection, optionally filled with your
+          choice of cheese, vegetables, or meats.
         </p>
 
         <div class="bg-rosewhite mb-4 p-4">
@@ -93,44 +93,69 @@
           </ul>
         </div>
 
-        <h2 class="mt-8 mb-5 text-nutmeg text-[1.75rem] font-youngserif">Ingredients</h2>
-        <ul class="list-square mx-10 space-y-2 mb-8">
+        <h2 class="text-nutmeg font-youngserif mb-5 mt-8 text-[1.75rem]">
+          Ingredients
+        </h2>
+        <ul class="list-square mx-10 mb-8 space-y-2">
           <li>2-3 large eggs</li>
           <li>Salt, to taste</li>
           <li>Pepper, to taste</li>
           <li>1 tablespoon of butter or oil</li>
-          <li>Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
+          <li>
+            Optional fillings: cheese, diced vegetables, cooked meats, herbs
+          </li>
         </ul>
         <hr />
-        <h2 class="mt-8 text-nutmeg text-[1.75rem] font-youngserif">Instructions</h2>
-        <ol class="ml-6 list-decimal space-y-2">
+        <h2 class="text-nutmeg font-youngserif mt-8 text-[1.75rem]">
+          Instructions
+        </h2>
+
+        <ol class="text-nutmeg ml-6 list-decimal space-y-2 font-bold">
           <li>
-            Beat the eggs: In a bowl, beat the eggs with a pinch of salt and
-            pepper until they are well mixed. You can add a tablespoon of water
-            or milk for a fluffier texture.
+            <span class="text-wengebrown font-normal"
+              ><b>Beat the eggs</b>: In a bowl, beat the eggs with a pinch of
+              salt and pepper until they are well mixed. You can add a
+              tablespoon of water or milk for a fluffier texture.</span
+            >
           </li>
           <li>
-            Heat the pan: Place a non-stick frying pan over medium heat and add
-            butter or oil.
+            <span class="text-wengebrown font-normal"
+              ><b>Heat the pan</b>: Place a non-stick frying pan over medium
+              heat and add butter or oil.</span
+            >
           </li>
           <li>
-            Cook the omelette: Once the butter is melted and bubbling, pour in
-            the eggs. Tilt the pan to ensure the eggs evenly coat the surface.
+            <span class="text-wengebrown font-normal"
+              ><b>Cook the omelette</b>: Once the butter is melted and bubbling,
+              pour in the eggs. Tilt the pan to ensure the eggs evenly coat the
+              surface.</span
+            >
           </li>
           <li>
-            Add fillings (optional): When the eggs begin to set at the edges but
-            are still slightly runny in the middle, sprinkle your chosen
-            fillings over one half of the omelette.
+            <span class="text-wengebrown font-normal"
+              ><b>Add fillings (optional)</b>: When the eggs begin to set at the
+              edges but are still slightly runny in the middle, sprinkle your
+              chosen fillings over one half of the omelette.</span
+            >
           </li>
           <li>
-            Fold and serve: As the omelette continues to cook, carefully lift
-            one edge and fold it over the fillings. Let it cook for another
-            minute, then slide it onto a plate.
+            <span class="text-wengebrown font-normal"
+              ><b>Fold and serve</b>: As the omelette continues to cook,
+              carefully lift one edge and fold it over the fillings. Let it cook
+              for another minute, then slide it onto a plate.</span
+            >
           </li>
-          <li>Enjoy: Serve hot, with additional salt and pepper if needed.</li>
+          <li>
+            <span class="text-wengebrown font-normal"
+              ><b>Enjoy</b>: Serve hot, with additional salt and pepper if
+              needed.</span
+            >
+          </li>
         </ol>
         <hr />
-        <h2 class="mt-8 text-nutmeg text-[1.75rem] font-youngserif">Nutrition</h2>
+        <h2 class="text-nutmeg font-youngserif mt-8 text-[1.75rem]">
+          Nutrition
+        </h2>
         <p>
           The table below shows nutritional values per serving without the
           additional fillings.
