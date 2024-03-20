@@ -63,19 +63,21 @@
     <title>Frontend Mentor | Recipe page</title>
   </head>
   <body
-    class="bg-eggshell text-wengebrown font-outfit flex min-h-svh w-full flex-col"
+    class="bg-eggshell text-wengebrown font-outfit flex min-h-svh w-full flex-col md:py-[7.7rem]"
   >
     <main
-      class="m-auto flex max-w-[376px] flex-col bg-white md:max-w-[740px] md:p-8"
+      class="m-auto flex max-w-[376px] flex-col bg-white md:max-w-[736px] md:rounded-3xl md:p-10"
     >
       <img
-        class="h-auto"
+        class="h-auto md:rounded-xl"
         src="./assets/images/image-omelette.jpeg"
         alt="image-omelette"
       />
-      <div class="mx-8">
+      <div class="mx-8 md:mx-0">
         <!-- [2.6rem] leading-none tracking-tight -->
-        <h1 class="text-darkcharcoal font-youngserif mb-5 mt-9 text-4xl">
+        <h1
+          class="text-darkcharcoal font-youngserif mb-5 mt-9 text-4xl md:mb-6 md:mt-10 md:text-[2.5rem]"
+        >
           Simple Omelette Recipe
         </h1>
         <p class="mb-8">
@@ -85,10 +87,14 @@
         </p>
 
         <div class="bg-rosewhite rounded-lg px-4 pb-6 pt-4">
-          <h2 class="text-darkraspberry mx-2 mb-3 mt-1 text-xl font-semibold">
+          <h2
+            class="text-darkraspberry mx-2 mb-3 mt-1 text-xl font-semibold md:mx-3 md:mt-2"
+          >
             Preparation time
           </h2>
-          <ul class="text-darkraspberry list-square mx-8 space-y-2 text-xs">
+          <ul
+            class="text-darkraspberry list-square mx-8 space-y-2 text-xs md:mx-9"
+          >
             <li>
               <div class="text-darkcharcoal pl-4 text-base font-normal">
                 <b>Total</b>: Approximately 10 minutes
@@ -107,7 +113,9 @@
           </ul>
         </div>
 
-        <h2 class="text-nutmeg font-youngserif mb-4 mt-6 text-[1.75rem]">
+        <h2
+          class="text-nutmeg font-youngserif mb-4 mt-6 text-[1.75rem] md:mt-8"
+        >
           Ingredients
         </h2>
         <ul class="text-nutmeg list-square mx-6 mb-8 space-y-2 text-xs">
@@ -192,28 +200,28 @@
           The table below shows nutritional values per serving without the
           additional fillings.
         </p>
-        <table class="mb-6 ml-8">
+        <table class="mb-6 ml-8 md:mb-0">
           <tbody>
             <tr
-              class="border-lightgrey grid grid-cols-2 gap-[4.5rem] border-b border-solid pb-3"
+              class="border-lightgrey grid grid-cols-2 gap-[4.5rem] border-b border-solid pb-3 md:gap-[15.4rem]"
             >
               <td>Calories</td>
               <td class="text-nutmeg font-bold">277kcal</td>
             </tr>
 
             <tr
-              class="border-lightgrey grid grid-cols-2 gap-[4.5rem] border-b border-solid py-3"
+              class="border-lightgrey grid grid-cols-2 gap-[4.5rem] border-b border-solid py-3 md:gap-[15.4rem]"
             >
               <td>Carbs</td>
               <td class="text-nutmeg font-bold">0g</td>
             </tr>
             <tr
-              class="border-lightgrey box-border grid grid-cols-2 gap-[4.5rem] border-b border-solid py-3"
+              class="border-lightgrey box-border grid grid-cols-2 gap-[4.5rem] border-b border-solid py-3 md:gap-[15.4rem]"
             >
               <td>Protein</td>
               <td class="text-nutmeg font-bold">20g</td>
             </tr>
-            <tr class="grid grid-cols-2 gap-[4.5rem] py-3">
+            <tr class="grid grid-cols-2 gap-[4.5rem] py-3 md:gap-[15.4rem]">
               <td>Fat</td>
               <td class="text-nutmeg font-bold">22g</td>
             </tr>
