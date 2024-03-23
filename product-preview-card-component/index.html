@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,700;1,9..144,700&family=Montserrat:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- <style type="text/tailwindcss">
     @layer base {
@@ -56,29 +62,32 @@
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   </head>
   <body
-    class="bg-cream text-darkgrayishblue font-montserrat flex min-h-svh w-full flex-col font-bold text-sm"
+    class="bg-cream text-darkgrayishblue font-montserrat flex min-h-svh w-full flex-col text-sm font-medium"
   >
     <!-- rounded-t-xl on img or overflow-hidden on parent? -->
     <main
       class="mx-auto my-7 flex max-w-[346px] flex-col overflow-hidden rounded-xl bg-white"
     >
+      <!-- use picture -->
       <img
         class="h-auto rounded-t-xl"
         src="./images/image-product-mobile.jpg"
         alt="perfume"
       />
       <div class="m-6">
-        <h1 class="text-xs uppercase font-medium  tracking-[0.33rem]">Perfume</h1>
+        <h1 class="text-xs font-medium uppercase tracking-[0.33rem]">
+          Perfume
+        </h1>
         <h2
-          class="text-verydarkblue font-fraunces my-4 text-[2rem] font-bold leading-[2rem] tracking-[0.14rem]"
+          class="text-verydarkblue font-fraunces my-4 text-[2rem] font-bold leading-[2rem]"
         >
           Gabrielle Essence Eau De Parfum
         </h2>
-        <p class="pr-6">
+        <p class="">
           A floral, solar and voluptuous interpretation composed by Olivier
           Polge, Perfumer-Creator for the House of CHANEL.
         </p>
-        <p>$149.99</p>
+        <p class="text-darkcyan font-fraunces text-[2rem]">$149.99</p>
         <p>$169.99</p>
         <button>Add to Cart</button>
       </div>
