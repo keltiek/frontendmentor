@@ -30,8 +30,8 @@
           },
           extend: {
             fontFamily: {
-              montserrat: ["Montserrat", "VariableFont"],
-              fraunces: ["Fraunces", "VariableFont"],
+              montserrat: ["Montserrat", "sans-serif"],
+              fraunces: ["Fraunces", "serif"],
             },
             colors: {
               clifford: "#34d399",
@@ -55,17 +55,33 @@
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   </head>
-  <body>
-    <main>
-      <h1>Perfume</h1>
-      <h2>Gabrielle Essence Eau De Parfum</h2>
-      <p>
-        A floral, solar and voluptuous interpretation composed by Olivier Polge,
-        Perfumer-Creator for the House of CHANEL.
-      </p>
-      <p>$149.99</p>
-      <p>$169.99</p>
-      <button>Add to Cart</button>
+  <body
+    class="bg-cream text-darkgrayishblue font-montserrat flex min-h-svh w-full flex-col font-bold text-sm"
+  >
+    <!-- rounded-t-xl on img or overflow-hidden on parent? -->
+    <main
+      class="mx-auto my-7 flex max-w-[346px] flex-col overflow-hidden rounded-xl bg-white"
+    >
+      <img
+        class="h-auto rounded-t-xl"
+        src="./images/image-product-mobile.jpg"
+        alt="perfume"
+      />
+      <div class="m-6">
+        <h1 class="text-xs uppercase font-medium  tracking-[0.33rem]">Perfume</h1>
+        <h2
+          class="text-verydarkblue font-fraunces my-4 text-[2rem] font-bold leading-[2rem] tracking-[0.14rem]"
+        >
+          Gabrielle Essence Eau De Parfum
+        </h2>
+        <p class="pr-6">
+          A floral, solar and voluptuous interpretation composed by Olivier
+          Polge, Perfumer-Creator for the House of CHANEL.
+        </p>
+        <p>$149.99</p>
+        <p>$169.99</p>
+        <button>Add to Cart</button>
+      </div>
     </main>
     <!--<div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
