@@ -68,36 +68,45 @@
   >
     <!-- rounded-t-xl on img or overflow-hidden on parent? -->
     <main
-      class="mx-auto my-7 flex max-w-[345px] flex-col overflow-hidden rounded-xl bg-white"
+      class="md:items-top mx-auto my-7 flex max-w-[345px] flex-col overflow-hidden rounded-xl bg-white md:my-44 md:max-w-[602px] md:flex-row"
     >
-      <!-- use picture -->
-      <img
-        class="h-auto rounded-t-xl"
-        src="./images/image-product-mobile.jpg"
-        alt="perfume"
-      />
-      <div class="m-6">
-        <h1 class="text-xs font-medium uppercase tracking-[0.33rem]">
+      <!-- use picture  rounded-t-xl md:rounded-l-xl , overflow instead-->
+      <!-- <picture class="md:w-1/2"> -->
+      <picture>
+        <source
+          srcset="./images/image-product-desktop.jpg"
+          media="(min-width: 768px)"
+        />
+        <img
+          class="h-auto"
+          src="./images/image-product-mobile.jpg"
+          alt="perfume"
+        />
+      </picture>
+      <div class="m-6 md:w-[83%]">
+        <!-- why not 50% w-1/2 ?? -->
+
+        <h1 class="text-xs font-medium uppercase tracking-[0.33rem] md:p-2">
           Perfume
         </h1>
         <h2
-          class="text-verydarkblue font-fraunces my-[0.66rem] text-[2rem] font-bold leading-[2rem]"
+          class="text-verydarkblue font-fraunces my-[0.66rem] text-[2rem] font-bold leading-[2rem] md:px-2"
         >
           Gabrielle Essence Eau De Parfum
         </h2>
-        <p class="mt-[1rem] text-[0.88rem] leading-relaxed">
+        <p class="mt-[1rem] text-[0.88rem] leading-relaxed md:p-2">
           A floral, solar and voluptuous interpretation composed by Olivier
           Polge, Perfumer-Creator for the House of CHANEL.
         </p>
-        <div class="grid grid-cols-2 items-center">
-          <p class="text-darkcyan font-fraunces mb-6 mt-8 text-[2rem]">
+        <div class="grid grid-cols-2 items-center md:px-2">
+          <p class="text-darkcyan font-fraunces mb-6 mt-8 text-[2rem] md:mt-6">
             $149.99
           </p>
-          <p class="text-[0.80rem]"><s>$169.99</s></p>
+          <p class="text-[0.80rem] md:pl-7"><s>$169.99</s></p>
         </div>
         <a
           href="#"
-          class="bg-darkcyan flex w-full justify-center gap-3 rounded-xl py-[0.82rem] text-white  duration-300 hover:bg-darkercyan focus:bg-darkestcyan"
+          class="bg-darkcyan hover:bg-darkercyan focus:bg-darkestcyan flex w-full justify-center gap-3 rounded-xl py-[0.82rem] text-white duration-300 md:ml-2 md:mt-4 md:w-[94%]"
           ><img src="./images/icon-cart.svg" alt="cart" />Add to Cart</a
         >
       </div>
