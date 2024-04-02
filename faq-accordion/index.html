@@ -49,6 +49,7 @@
               lightpink: "hsl(275, 100%, 97%)",
               grayishpurple: "hsl(292, 16%, 49%)",
               darkpurple: "hsl(292, 42%, 14%)",
+              hoverpurple: "hsl(292, 86%, 49%)",
             },
           },
         },
@@ -61,28 +62,28 @@
   </head>
   <!-- min-h-svh content-center -->
   <body
-    class="bg-lightpink font-primary flex min-h-svh w-full flex-col items-center bg-[url('./assets/images/background-pattern-mobile.svg')] bg-top bg-no-repeat text-base font-normal leading-[1.3rem] md:bg-[url('./assets/images/background-pattern-desktop.svg')]"
+    class="text-darkpurple bg-lightpink font-primary flex min-h-svh w-full flex-col items-center bg-[url('./assets/images/background-pattern-mobile.svg')] bg-top bg-no-repeat text-base font-normal leading-[1.3rem] md:bg-[url('./assets/images/background-pattern-desktop.svg')] md:leading-[1.5rem]"
   >
     <main
-      class="mx-auto my-[8.875rem] flex max-w-[328px] flex-col rounded-lg bg-white p-6 md:my-[10.5rem] md:max-w-[1440px] md:p-[2.375rem]"
+      class="shadow-grayishpurple mx-auto my-[8.875rem] flex max-w-[328px] flex-col rounded-lg bg-white p-6 shadow-2xl md:my-[10.5rem] md:max-w-[1440px] md:rounded-2xl md:p-[2.375rem]"
     >
       <h1
-        class="text-darkpurple mt-2 text-[2.0rem] font-bold md:mt-4 md:text-[3.5rem]"
+        class="mt-1 flex items-center text-[2.0rem] font-bold md:mt-3 md:text-[3.5rem]"
       >
         <img
           class="inline-block max-w-7 md:max-w-10"
           src="./assets/images/icon-star.svg"
           alt=""
-        /><span class="pl-5">FAQs</span>
+        /><span class="pl-5 md:pl-[1.625rem]">FAQs</span>
       </h1>
       <div
-        class="mx-auto grid max-w-[526px] gap-[14px] divide-y divide-neutral-200 md:w-[526px]"
+        class="mx-auto grid gap-[.875rem] divide-y divide-neutral-200 md:w-[524px] md:gap-[1.5rem]"
       >
         <!-- couldnot prevent small resizing without setting md:w-[526px] -->
         <details class="group" open>
           <!-- should not use pr-11 in span, maybe use flex or some gap end property-->
           <summary
-            class="mt-6 flex cursor-pointer list-none items-center justify-between gap-4 font-semibold md:mt-12 md:text-[1.2rem] md:tracking-[-0.038rem]"
+            class="hover:text-hoverpurple group-open:text-darkpurple mt-7 flex cursor-pointer list-none items-center justify-between gap-4 font-semibold md:mt-11 md:text-[1.2rem] md:tracking-[-0.038rem]"
           >
             <span>What is Frontend Mentor, and how will it help me?</span>
 
@@ -97,7 +98,9 @@
               alt=""
             />
           </summary>
-          <p class="text-grayishpurple pr-1 pt-6 tracking-[-0.06rem]">
+          <p
+            class="text-grayishpurple pr-1 pt-6 tracking-[-0.06rem] md:tracking-normal"
+          >
             Frontend Mentor offers realistic coding challenges to help
             developers improve their frontend coding skills with projects in
             HTML, CSS, and JavaScript. It's suitable for all levels and ideal
@@ -107,9 +110,9 @@
 
         <details class="group">
           <summary
-            class="mt-6 flex cursor-pointer list-none items-center justify-between gap-4 font-semibold md:mt-12 md:text-[1.2rem] md:tracking-[-0.038rem]"
+            class="hover:text-hoverpurple group-open:text-darkpurple mt-6 flex cursor-pointer list-none items-center justify-between gap-4 font-semibold md:text-[1.2rem] md:tracking-[-0.038rem]"
           >
-            <span> Is Frontend Mentor free?</span>
+            <span class=""> Is Frontend Mentor free?</span>
 
             <img
               class="group-open:hidden"
@@ -131,11 +134,9 @@
 
         <details class="group">
           <summary
-            class="mt-6 flex cursor-pointer list-none items-center justify-between gap-4 font-semibold md:mt-12 md:text-[1.2rem] md:tracking-[-0.038rem]"
+            class="hover:text-hoverpurple group-open:text-darkpurple mt-6 flex cursor-pointer list-none items-center justify-between gap-4 font-semibold md:text-[1.2rem] md:tracking-[-0.038rem]"
           >
-            <span class="pr-6">
-              Can I use Frontend Mentor projects in my portfolio?</span
-            >
+            <span> Can I use Frontend Mentor projects in my portfolio?</span>
 
             <img
               class="group-open:hidden"
@@ -157,11 +158,9 @@
 
         <details class="group">
           <summary
-            class="mt-6 flex cursor-pointer list-none items-center justify-between gap-4 font-semibold md:mt-12 md:text-[1.2rem] md:tracking-[-0.038rem]"
+            class="hover:text-hoverpurple group-open:text-darkpurple mt-6 flex cursor-pointer list-none items-center justify-between gap-4 font-semibold md:mt-6 md:text-[1.2rem] md:tracking-[-0.038rem]"
           >
-            <span class="pr-6"
-              >How can I get help if I'm stuck on a challenge?</span
-            >
+            <span>How can I get help if I'm stuck on a challenge?</span>
 
             <img
               class="group-open:hidden"
