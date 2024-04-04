@@ -38,19 +38,22 @@
   <title>Frontend Mentor | Interactive rating component</title>
 
 </head>
-<body class="font-primary text-[.9375rem] font-normal">
+<body class="font-primary text-[.9375rem] font-normal bg-verydarkblue text-lightgrey flex min-h-svh w-full flex-col items-center">
 
   <main>
   <!-- Rating state start -->
-<section id="rating">
+  <!-- from-verydarkblue to-darkblue p-6 bg-gradient-to-tr -->
+<section id="rating" class="mx-auto my-[154px] flex flex-col max-w-[328px] rounded-lg bg-darkblue p-6">
+  <div class="flex items-center h-auto p-4 rounded-full w-fit bg-white">
   <img
   class=""
   src="./images/icon-star.svg"
   alt=""
 />
-  <h1 class="font-bold">How did we do?</h1>
+</div>
+  <h1 class="font-bold text-white text-2xl py-[10px]">How did we do?</h1>
 
-  <p>Please let us know how we did with your support request. All feedback is appreciated 
+  <p class="tracking-[-0.028rem]">Please let us know how we did with your support request. All feedback is appreciated 
   to help us improve our offering!</p>
 
   <ol>
@@ -61,7 +64,7 @@
     <li>5</li>
   </ol>
 
-  <button>Submit</button>
+  <button class="text-white uppercase text-normal tracking-[0.1rem]">Submit</button>
 
   <!-- Rating state end -->
 </section>
