@@ -1,58 +1,71 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        listStyleType: {
-          none: "none",
-          disc: "disc",
-          decimal: "decimal",
-          square: "square",
-          roman: "upper-roman",
-        },
-        extend: {
-          fontFamily: {
-            primary: ["Overpass", "sans-serif"],
-          },
-          colors: {
-            clifford: "#34d399",
-            primaryorange: "hsl(25, 97%, 53%)",
-            lightgrey: "hsl(217, 12%, 63%)",
-            mediumgrey: "hsl(216, 12%, 54%)",
-            darkblue: "hsl(213, 19%, 18%)",
-            verydarkblue: "hsl(216, 12%, 8%)",
-          },
-        },
-      },
-    };
-  </script>
-  <title>Frontend Mentor | Interactive rating component</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
 
-</head>
-<body class="font-primary text-[.9375rem] font-normal bg-verydarkblue text-lightgrey flex min-h-svh w-full flex-col items-center">
-
-  <main>
-  <!-- Rating state start -->
-  <!-- from-verydarkblue to-darkblue p-6 bg-gradient-to-tr -->
-<section id="rating" class="mx-auto my-[154px] flex flex-col max-w-[328px] rounded-lg bg-darkblue p-6">
-  <div class="flex items-center h-auto p-3 rounded-full w-fit bg-white">
-  <img
-  class=""
-  src="./images/icon-star.svg"
-  alt=""
-/>
-</div>
-  <h1 class="font-bold text-white text-2xl py-[14px]">How did we do?</h1>
-<!--
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          listStyleType: {
+            none: "none",
+            disc: "disc",
+            decimal: "decimal",
+            square: "square",
+            roman: "upper-roman",
+          },
+          extend: {
+            fontFamily: {
+              primary: ["Overpass", "sans-serif"],
+            },
+            colors: {
+              clifford: "#34d399",
+              primaryorange: "hsl(25, 97%, 53%)",
+              lightgrey: "hsl(217, 12%, 63%)",
+              mediumgrey: "hsl(216, 12%, 54%)",
+              darkgrey: "hsl(213,19%,26%)",
+              darkblue: "hsl(213, 19%, 18%)",
+              verydarkblue: "hsl(216, 12%, 8%)",
+            },
+          },
+        },
+      };
+    </script>
+    <title>Frontend Mentor | Interactive rating component</title>
+  </head>
+  <body
+    class="font-primary bg-verydarkblue text-lightgrey flex min-h-svh w-full flex-col items-center text-[.9375rem] font-normal"
+  >
+    <main>
+      <!-- Rating state start -->
+      <!-- from-verydarkblue to-darkblue p-6 bg-gradient-to-tr -->
+      <section
+        id="rating"
+        class="bg-darkblue mx-auto my-[154px] flex max-w-[328px] flex-col rounded-lg p-6"
+      >
+        <div
+          class="bg-darkgrey flex h-auto w-fit items-center rounded-full p-3"
+        >
+          <img class="" src="./images/icon-star.svg" alt="" />
+        </div>
+        <h1 class="pb-[.75rem] pt-[1rem] text-2xl font-bold text-white">
+          How did we do?
+        </h1>
+        <!--
   <p class="tracking-[-0.028rem]">Please let us know how we did with your support request. All feedback is appreciated 
   to help us improve our offering!</p>
 
@@ -64,64 +77,117 @@
     <li>5</li>
   </ol>
 -->
-  <form>
-  <fieldset>
-    <legend class="tracking-[-0.028rem]">Please let us know how we did with your support request. All feedback is appreciated 
-      to help us improve our offering!</legend>
-    <div class="grid grid-cols-5 gap-5 py-6">
-      <input type="radio" id="rating1" name="rating" value="1" class="peer/1 hidden"/>
-      <label for="rating1" class="grid place-items-center rounded-full h-10 bg-white hover:bg-red-500 peer-checked/1:bg-primaryorange">1</label>
+        <form>
+          <fieldset>
+            <legend class="tracking-[-0.028rem]">
+              Please let us know how we did with your support request. All
+              feedback is appreciated to help us improve our offering!
+            </legend>
+            <div class="grid grid-cols-5 gap-5 py-7">
+              <input
+                type="radio"
+                id="rating1"
+                name="rating"
+                value="1"
+                class="peer/1 hidden"
+              />
+              <label
+                for="rating1"
+                class="bg-darkgrey hover:bg-mediumgrey peer-checked/1:bg-primaryorange grid h-10 place-items-center rounded-full hover:text-white peer-checked/1:text-white"
+                >1</label
+              >
 
-      <input type="radio" id="rating2" name="rating" value="2" class="peer/2 hidden"/>
-      <label for="rating2" class="grid place-items-center  rounded-full h-10 bg-white hover:bg-red-500 peer-checked/2:bg-primaryorange">2</label>
+              <input
+                type="radio"
+                id="rating2"
+                name="rating"
+                value="2"
+                class="peer/2 hidden"
+              />
+              <label
+                for="rating2"
+                class="bg-darkgrey hover:bg-mediumgrey peer-checked/2:bg-primaryorange grid h-10 place-items-center rounded-full hover:text-white peer-checked/2:text-white"
+                >2</label
+              >
 
-      <input type="radio" id="rating3" name="rating" value="3" class="peer/3 hidden"/>
-      <label for="rating3" class="grid place-items-center  rounded-full h-10 bg-white hover:bg-red-500 peer-checked/3:bg-primaryorange">3</label>
+              <input
+                type="radio"
+                id="rating3"
+                name="rating"
+                value="3"
+                class="peer/3 hidden"
+              />
+              <label
+                for="rating3"
+                class="bg-darkgrey hover:bg-mediumgrey peer-checked/3:bg-primaryorange grid h-10 place-items-center rounded-full hover:text-white peer-checked/3:text-white"
+                >3</label
+              >
 
-      <input type="radio" id="rating4" name="rating" value="5" class="peer/4 hidden"/>
-      <label for="rating4" class="grid place-items-center  rounded-full h-10 bg-white hover:bg-red-500 peer-checked/4:bg-primaryorange">4</label>
+              <input
+                type="radio"
+                id="rating4"
+                name="rating"
+                value="4"
+                class="peer/4 hidden"
+              />
+              <label
+                for="rating4"
+                class="bg-darkgrey hover:bg-mediumgrey peer-checked/4:bg-primaryorange grid h-10 place-items-center rounded-full hover:text-white peer-checked/4:text-white"
+                >4</label
+              >
 
-      <input type="radio" id="rating5" name="rating" value="5" class="peer/5 hidden"/>
-      <label for="rating5" class="grid place-items-center  rounded-full h-10 bg-white hover:bg-red-500 peer-checked/5:bg-primaryorange">5</label>
-    </div>
-   
-      <button type="submit" class="w-full text-white uppercase text-normal tracking-[0.1rem] bg-primaryorange rounded-3xl py-3">Submit</button>
-    
-  </fieldset>
-</form>
-<!--
+              <input
+                type="radio"
+                id="rating5"
+                name="rating"
+                value="5"
+                class="peer/5 hidden"
+              />
+              <label
+                for="rating5"
+                class="bg-darkgrey hover:bg-mediumgrey peer-checked/5:bg-primaryorange grid h-10 place-items-center rounded-full hover:text-white peer-checked/5:text-white"
+                >5</label
+              >
+            </div>
+
+            <button
+              type="submit"
+              class="text-normal bg-primaryorange w-full rounded-3xl py-3 uppercase tracking-[0.1rem] text-white"
+            >
+              Submit
+            </button>
+          </fieldset>
+        </form>
+        <!--
   <button class="text-white uppercase text-normal tracking-[0.1rem] bg-primaryorange rounded-3xl py-3">Submit</button>
 -->
-  <!-- Rating state end -->
-</section>
+        <!-- Rating state end -->
+      </section>
 
+      <!-- Thank you state start -->
+      <section id="thanks">
+        <img class="" src="./images/illustration-thank-you.svg" alt="" />
+        <p>
+          You selected
+          <!-- Add rating here -->
+          out of 5
+        </p>
 
-  <!-- Thank you state start -->
-  <section id="thanks">
-    <img
-    class=""
-    src="./images/illustration-thank-you.svg"
-    alt=""
-  />
-  <p>You selected <!-- Add rating here --> out of 5</p> 
+        <h2 class="font-bold">Thank you!</h2>
 
-  <h2 class="font-bold">Thank you!</h2>
+        <p>
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don’t hesitate to get in touch!
+        </p>
+      </section>
+    </main>
+    <!-- Thank you state end -->
 
-  <p>
-    We appreciate you taking the time to give a rating. If you ever need more support,
-    don’t hesitate to get in touch!
-  </p>
-
-</section>
-
-</main>
-  <!-- Thank you state end -->
-
-  <!--
+    <!--
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
 -->
-</body>
+  </body>
 </html>
