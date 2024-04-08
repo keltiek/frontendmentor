@@ -50,19 +50,21 @@
   <body
     class="font-primary bg-verydarkblue text-lightgrey flex min-h-svh w-full flex-col items-center text-[.9375rem] font-normal"
   >
-    <main>
+    <main
+      class="bg-darkblue transi mx-auto my-[154px] flex max-w-[328px] flex-col items-center rounded-xl p-6 duration-700 md:my-[194px] md:max-w-[410px] md:rounded-3xl md:p-[2rem]"
+    >
       <!-- Rating state start -->
       <!-- from-verydarkblue to-darkblue p-6 bg-gradient-to-tr -->
-      <section
-        id="rating-section"
-        class="bg-darkblue mx-auto my-[154px] flex max-w-[328px] flex-col rounded-lg p-6"
-      >
+
+      <section id="rating-section">
         <div
-          class="bg-darkgrey flex h-auto w-fit items-center rounded-full p-3"
+          class="bg-darkgrey flex h-auto w-fit items-center rounded-full p-3 md:p-4"
         >
           <img class="" src="./images/icon-star.svg" alt="" />
         </div>
-        <h1 class="pb-[.75rem] pt-[1rem] text-2xl font-bold text-white">
+        <h1
+          class="pb-[.75rem] pt-[1rem] text-2xl font-bold text-white md:text-[1.75rem] md:pt-8"
+        >
           How did we do?
         </h1>
         <!--
@@ -79,11 +81,11 @@
 -->
         <form id="rating-form">
           <fieldset>
-            <legend class="tracking-[-0.028rem]">
+            <legend class="tracking-[-0.028rem] md:tracking-normal">
               Please let us know how we did with your support request. All
               feedback is appreciated to help us improve our offering!
             </legend>
-            <div class="grid grid-cols-5 gap-5 py-7">
+            <div class="grid grid-cols-5 gap-5 py-7 md:gap-6 md:py-8" >
               <input
                 type="radio"
                 id="rating1"
@@ -93,7 +95,7 @@
               />
               <label
                 for="rating1"
-                class="bg-darkgrey hover:bg-mediumgrey peer-checked/1:bg-primaryorange grid h-10 place-items-center rounded-full hover:cursor-pointer hover:text-white peer-checked/1:text-white"
+                class="bg-darkgrey hover:bg-mediumgrey peer-checked/1:bg-primaryorange grid h-10 place-items-center rounded-full hover:cursor-pointer hover:text-white peer-checked/1:text-white md:h-12"
                 >1</label
               >
 
@@ -106,7 +108,7 @@
               />
               <label
                 for="rating2"
-                class="bg-darkgrey hover:bg-mediumgrey peer-checked/2:bg-primaryorange grid h-10 place-items-center rounded-full hover:cursor-pointer hover:text-white peer-checked/2:text-white"
+                class="bg-darkgrey hover:bg-mediumgrey peer-checked/2:bg-primaryorange grid h-10 place-items-center rounded-full hover:cursor-pointer hover:text-white peer-checked/2:text-white md:h-12"
                 >2</label
               >
 
@@ -119,7 +121,7 @@
               />
               <label
                 for="rating3"
-                class="bg-darkgrey hover:bg-mediumgrey peer-checked/3:bg-primaryorange grid h-10 place-items-center rounded-full hover:cursor-pointer hover:text-white peer-checked/3:text-white"
+                class="bg-darkgrey hover:bg-mediumgrey peer-checked/3:bg-primaryorange grid h-10 place-items-center rounded-full hover:cursor-pointer hover:text-white peer-checked/3:text-white md:h-12"
                 >3</label
               >
 
@@ -132,7 +134,7 @@
               />
               <label
                 for="rating4"
-                class="bg-darkgrey hover:bg-mediumgrey peer-checked/4:bg-primaryorange grid h-10 place-items-center rounded-full hover:cursor-pointer hover:text-white peer-checked/4:text-white"
+                class="bg-darkgrey hover:bg-mediumgrey peer-checked/4:bg-primaryorange grid h-10 place-items-center rounded-full hover:cursor-pointer hover:text-white peer-checked/4:text-white md:h-12"
                 >4</label
               >
 
@@ -145,7 +147,7 @@
               />
               <label
                 for="rating5"
-                class="bg-darkgrey hover:bg-mediumgrey peer-checked/5:bg-primaryorange grid h-10 place-items-center rounded-full hover:cursor-pointer hover:text-white peer-checked/5:text-white"
+                class="bg-darkgrey hover:bg-mediumgrey peer-checked/5:bg-primaryorange grid h-10 place-items-center rounded-full hover:cursor-pointer hover:text-white peer-checked/5:text-white md:h-12"
                 >5</label
               >
             </div>
@@ -157,7 +159,7 @@
             </div>
             <button
               type="submit"
-              class="text-normal bg-primaryorange hover:text-primaryorange w-full rounded-3xl py-3 uppercase tracking-[0.1rem] text-white hover:bg-white"
+              class="bg-primaryorange hover:text-primaryorange w-full rounded-3xl py-3 uppercase tracking-[0.1rem] text-white hover:bg-white md:text-base"
             >
               Submit
             </button>
@@ -171,17 +173,23 @@
 
       <!-- Thank you state start -->
       <section id="thanks-section" class="hidden">
-        <div
-          class="bg-darkblue mx-auto my-[154px] flex max-w-[328px] flex-col items-center rounded-lg p-6"
-        >
-          <img class="max-h-24 my-3" src="./images/illustration-thank-you.svg" alt="" />
-          <p class="tracking-[-0.028rem] text-primaryorange rounded-3xl px-2 py-1 my-4 bg-darkgrey">
+        <div class="flex flex-col items-center">
+          <img
+            class="my-3 max-h-24"
+            src="./images/illustration-thank-you.svg"
+            alt=""
+          />
+          <p
+            class="text-primaryorange bg-darkgrey my-4 rounded-3xl px-2 py-1 tracking-[-0.028rem]"
+          >
             You selected <span class="selectedRating"></span>
             <!-- Add rating here -->
             out of 5
           </p>
 
-          <h2 class="pb-[.75rem] pt-[0.4rem] text-2xl font-bold text-white">Thank you!</h2>
+          <h2 class="pb-[.75rem] pt-[0.4rem] text-2xl font-bold text-white">
+            Thank you!
+          </h2>
 
           <p class="text-center tracking-[-0.028rem]">
             We appreciate you taking the time to give a rating. If you ever need
