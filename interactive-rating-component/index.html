@@ -51,7 +51,7 @@
     class="font-primary bg-verydarkblue text-lightgrey flex min-h-svh w-full flex-col items-center text-[.9375rem] font-normal"
   >
     <main
-      class="bg-darkblue transi mx-auto my-[154px] flex max-w-[328px] flex-col items-center rounded-xl p-6 duration-700 md:my-[194px] md:max-w-[410px] md:rounded-3xl md:p-[2rem]"
+      class="bg-darkblue transi mx-auto my-[154px] flex max-w-[328px] flex-col items-center rounded-xl p-6 duration-700 md:my-[194px] md:max-w-[410px] md:rounded-3xl md:p-[2.15rem]"
     >
       <!-- Rating state start -->
       <!-- from-verydarkblue to-darkblue p-6 bg-gradient-to-tr -->
@@ -63,29 +63,18 @@
           <img class="" src="./images/icon-star.svg" alt="" />
         </div>
         <h1
-          class="pb-[.75rem] pt-[1rem] text-2xl font-bold text-white md:text-[1.75rem] md:pt-8"
+          class="pb-[.75rem] pt-[1rem] text-2xl font-bold text-white md:pt-8 md:text-[1.75rem]"
         >
           How did we do?
         </h1>
-        <!--
-  <p class="tracking-[-0.028rem]">Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!</p>
 
-  <ol class="grid grid-cols-5">
-    <li>1</li>
-    <li>2</li>
-    <li>3</li>
-    <li>4</li>
-    <li>5</li>
-  </ol>
--->
         <form id="rating-form">
           <fieldset>
             <legend class="tracking-[-0.028rem] md:tracking-normal">
               Please let us know how we did with your support request. All
               feedback is appreciated to help us improve our offering!
             </legend>
-            <div class="grid grid-cols-5 gap-5 py-7 md:gap-6 md:py-8" >
+            <div class="grid grid-cols-5 gap-5 py-7 md:gap-6 md:py-8">
               <input
                 type="radio"
                 id="rating1"
@@ -165,9 +154,7 @@
             </button>
           </fieldset>
         </form>
-        <!--
-  <button class="text-white uppercase text-normal tracking-[0.1rem] bg-primaryorange rounded-3xl py-3">Submit</button>
--->
+
         <!-- Rating state end -->
       </section>
 
@@ -175,23 +162,25 @@
       <section id="thanks-section" class="hidden">
         <div class="flex flex-col items-center">
           <img
-            class="my-3 max-h-24"
+            class="my-3 max-h-24 md:max-h-max"
             src="./images/illustration-thank-you.svg"
             alt=""
           />
           <p
-            class="text-primaryorange bg-darkgrey my-4 rounded-3xl px-2 py-1 tracking-[-0.028rem]"
+            class="text-primaryorange bg-darkgrey my-4 rounded-3xl px-2 py-1 tracking-[-0.028rem] md:my-6 md:px-4 md:tracking-normal"
           >
             You selected <span class="selectedRating"></span>
             <!-- Add rating here -->
             out of 5
           </p>
 
-          <h2 class="pb-[.75rem] pt-[0.4rem] text-2xl font-bold text-white">
+          <h2
+            class="pb-[.75rem] pt-[0.4rem] text-2xl font-bold text-white md:pt-3 md:text-[1.75rem]"
+          >
             Thank you!
           </h2>
 
-          <p class="text-center tracking-[-0.028rem]">
+          <p class="text-center tracking-[-0.028rem] md:tracking-normal">
             We appreciate you taking the time to give a rating. If you ever need
             more support, don’t hesitate to get in touch!
           </p>
