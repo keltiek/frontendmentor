@@ -1,74 +1,94 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-  <!-- displays site properly based on user's device -->
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
 
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        listStyleType: {
-          none: "none",
-          disc: "disc",
-          decimal: "decimal",
-          square: "square",
-          roman: "upper-roman",
-        },
-        extend: {
-          fontFamily: {
-            primary: ["Manrope", "sans-serif"],
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          listStyleType: {
+            none: "none",
+            disc: "disc",
+            decimal: "decimal",
+            square: "square",
+            roman: "upper-roman",
           },
-          colors: {
-            clifford: "#34d399",
-            verydarkgrayishblue: "hsl(217, 19%, 35%)",
-            desaturateddarkblue: "hsl(214, 17%, 51%)",
-            grayishblue: "hsl(212, 23%, 69%)",
-            lightgrayishblue: "hsl(210, 46%, 95%)",
+          extend: {
+            fontFamily: {
+              primary: ["Manrope", "sans-serif"],
+            },
+            colors: {
+              clifford: "#34d399",
+              verydarkgrayishblue: "hsl(217, 19%, 35%)",
+              desaturateddarkblue: "hsl(214, 17%, 51%)",
+              grayishblue: "hsl(212, 23%, 69%)",
+              lightgrayishblue: "hsl(210, 46%, 95%)",
+            },
           },
         },
-      },
-    };
-  </script>
+      };
+    </script>
 
-  <title>Frontend Mentor | Article preview component</title>
-</head>
-<body class="bg-lightgrayishblue min-h-svh w-full flex flex-col items-center font-primary text-[.8125rem] font-medium">
-  <section id="card" class="mx-auto my-8 max-w-xl flex flex-col items-center bg-white">
-<img class="bg-cover h-auto max-w-80" src="./images/drawers.jpg" alt="furniture with drawers">
-  <h1 class="font-bold">
-    Shift the overall look and feel by adding these wonderful
-    touches to furniture in your home
-  </h1>
+    <title>Frontend Mentor | Article preview component</title>
+  </head>
+  <body
+    class="bg-lightgrayishblue font-primary flex min-h-svh w-full flex-col items-center text-[.8125rem] font-medium"
+  >
+    <section
+      id="card"
+      class="mx-auto my-[74px] flex max-w-[328px] flex-col items-center rounded-xl bg-white"
+    >
+      <!-- w-full object-cover cannot crop only bottom?? -->
+      <img
+        class="mb-1 h-[200px] w-full rounded-t-xl object-cover"
+        src="./images/drawers.jpg"
+        alt="furniture with drawers"
+      />
+      <section id="preview" class="p-[2rem] pb-5">
+        <h1
+          class="text-verydarkgrayishblue text-base font-bold tracking-[0.01rem]"
+        >
+          Shift the overall look and feel by adding these wonderful touches to
+          furniture in your home
+        </h1>
 
-  <p>
-    Ever been in a room and felt like something was missing? Perhaps
-    it felt slightly bare and uninviting. I’ve got some simple tips
-    to help you make any room feel complete.
-  </p>
-<div class="flex flex-row">
-  <img
-  class="h-auto max-w-12 rounded-full"
-  src="./images/avatar-michelle.jpg"
-  alt="avatar-michelle"
-/>
-<div>
-  <p class="font-bold">Michelle Appleton</p>
-  <time>28 Jun 2020</time>
-</div>
-  <button>Share</button>
-</div>
-
-</section>
-  <!-- <div class="attribution">
+        <p class="text-desaturateddarkblue py-[.875rem] tracking-[0.01rem]">
+          Ever been in a room and felt like something was missing? Perhaps it
+          felt slightly bare and uninviting. I’ve got some simple tips to help
+          you make any room feel complete.
+        </p>
+        <div class="mt-4 flex flex-row gap-3">
+          <img
+            class="h-auto max-w-10 rounded-full"
+            src="./images/avatar-michelle.jpg"
+            alt="avatar-michelle"
+          />
+          <div>
+            <p class="text-verydarkgrayishblue font-bold">Michelle Appleton</p>
+            <time class="text-grayishblue">28 Jun 2020</time>
+          </div>
+          <button class="items-end">Share</button>
+        </div>
+      </section>
+    </section>
+    <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
-
-</body>
+  </body>
 </html>
