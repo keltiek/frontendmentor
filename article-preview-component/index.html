@@ -88,8 +88,14 @@
           </div>
           <!-- <button class="items-end">Share</button> -->
           <button
+            id="share-button"
             class="bg-lightgrayishblue hover:bg-grayishblue group cursor-pointer rounded-full p-2"
           >
+            <span
+              id="share-tooltip"
+              class="text-grayishblue bg-verydarkgrayishblue absolute m-4 mx-auto hidden -translate-x-1/2 -translate-y-[175%] rounded-md p-5 text-sm uppercase text-gray-100 opacity-0 transition-opacity group-focus:opacity-100"
+              >Share</span
+            >
             <svg
               class="fill-[#6E8098] group-hover:fill-white"
               xmlns="http://www.w3.org/2000/svg"
@@ -109,4 +115,14 @@
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
   </body>
+  <footer>
+    <script>
+      const shareButton = document.getElementById("share-button");
+      const shareTooltip = document.getElementById("share-tooltip");
+      shareButton.addEventListener("click", (event) => {
+        console.log("Click");
+        shareTooltip.classList.remove("hidden");
+      });
+    </script>
+  </footer>
 </html>
