@@ -91,11 +91,48 @@
             id="share-button"
             class="bg-lightgrayishblue hover:bg-grayishblue group cursor-pointer rounded-full p-2"
           >
-            <span
-              id="share-tooltip"
-              class="text-grayishblue bg-verydarkgrayishblue absolute m-4 mx-auto hidden -translate-x-1/2 -translate-y-[175%] rounded-md p-5 text-sm uppercase text-gray-100 opacity-0 transition-opacity group-focus:opacity-100"
-              >Share</span
-            >
+            <span id="share-tooltip" class="relative hidden">
+              <div
+                class="text-grayishblue bg-verydarkgrayishblue absolute m-4 mx-auto flex -translate-x-1/2 -translate-y-[185%] flex-row gap-4 rounded-xl px-9 py-5 text-sm uppercase tracking-[0.26rem] text-gray-100 opacity-50 transition-opacity group-focus:opacity-100"
+              >
+                Share
+
+                <a
+                  href="#"
+                  class="rounded-full hover:bg-sky-300 focus:bg-sky-500"
+                >
+                  <img
+                    class="h-auto max-w-10"
+                    src="./images/icon-facebook.svg"
+                    alt="facebook"
+                  />
+                </a>
+                <a
+                  href="#"
+                  class="rounded-full hover:bg-sky-300 focus:bg-sky-500"
+                >
+                  <img
+                    class="h-auto max-w-10"
+                    src="./images/icon-twitter.svg"
+                    alt="twitter"
+                  />
+                </a>
+                <a
+                  href="#"
+                  class="rounded-full hover:bg-sky-300 focus:bg-sky-500"
+                >
+                  <img
+                    class="h-auto max-w-10"
+                    src="./images/icon-pinterest.svg"
+                    alt="pinterest"
+                  />
+                </a>
+                <!-- Arrow -->
+                <div
+                  class="border-t-verydarkgrayishblue absolute left-1/2 top-full hidden h-0 w-0 -translate-x-1/2 transform border-l-[12px] border-r-[12px] border-t-[12px] border-solid border-x-transparent border-b-transparent md:block"
+                ></div>
+              </div>
+            </span>
             <svg
               class="fill-[#6E8098] group-hover:fill-white"
               xmlns="http://www.w3.org/2000/svg"
@@ -121,7 +158,15 @@
       const shareTooltip = document.getElementById("share-tooltip");
       shareButton.addEventListener("click", (event) => {
         console.log("Click");
-        shareTooltip.classList.remove("hidden");
+        //shareTooltip.classList.remove("hidden");
+        shareTooltip.classList.toggle("hidden");
+      });
+      // Hide the element when clicking outside
+      document.addEventListener("click", (event) => {
+        if (!shareButton.contains(event.target)) {
+          console.log("Click Away");
+          shareTooltip.classList.add("hidden");
+        }
       });
     </script>
   </footer>
