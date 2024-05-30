@@ -38,9 +38,9 @@
     };
   </script>
 </head>
-<body class="text-base font-normal font-primary text-charcoalgrey">
+<body class="text-base font-normal font-primary text-charcoalgrey flex flex-col min-h-svh w-full items-center">
 
-  <main>
+  <main class="mx-auto flex flex-col items-center max-w-[374px]">
     <!-- Sign-up form start -->
     <picture>
           <source
@@ -53,21 +53,21 @@
             alt="illustration"
           />
         </picture>
-    <h1 class="text-darkslategrey">Stay updated!</h1>
+    <h1 class="text-darkslategrey font-bold text-[2.5rem]">Stay updated!</h1>
     <p>Join 60,000+ product managers receiving monthly updates on:</p>
-    <ul>
+    <ul class="list-image-[url(./assets/images/icon-list.svg)]">
       <li>Product discovery and building what matters</li>
       <li>Measuring to ensure updates are a success</li>
       <li>And much more!</li>
     </ul>
     <form action="" novalidate>
       <label for="email" class="">
-        <span>Email address</span>
+        <span class="font-bold text-xs">Email address</span>
         <input
           type="email"
           name="email"
           id="email"
-          class="w-full rounded border border-gray-300 bg-inherit p-3 shadow shadow-gray-200 mt-2 appearance-none outline-none text-neutral-800 invalid:[&:not(:placeholder-shown):not(:focus)]:border-red-500 peer"
+          class="w-full rounded-xl border border-gray-300 bg-inherit  shadow shadow-gray-200 mt-2 py-4 px-5 appearance-none outline-none text-neutral-800 invalid:[&:not(:placeholder-shown):not(:focus)]:border-red-500 peer"
           placeholder="email@company.com"
           required
           pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
@@ -76,7 +76,7 @@
           Valid email required
         </span>
       </label>      
-      <button>Subscribe to monthly newsletter</button>
+      <button class="w-full font-bold bg-darkslategrey rounded-xl p-4 text-white">Subscribe to monthly newsletter</button>
     </form>
     <!-- Sign-up form end -->
     <!-- Success message start -->
